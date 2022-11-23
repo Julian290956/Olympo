@@ -306,3 +306,11 @@ body.dark .switch::before{
 body.dark .home .text{
     color: var(--text-color);
 }
+
+.son, .san{
+    color: #000;
+}
+.son:hover{
+    background-color: #695CFE;
+    border-radius: 30px;
+}
