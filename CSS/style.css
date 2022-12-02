@@ -311,6 +311,7 @@ body.dark .home .text{
     color: #000;
 }
 .son:hover{
+    display: inline-block;
     background-color: #695CFE;
     border-radius: 30px;
 }
