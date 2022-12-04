@@ -30,8 +30,7 @@
     height: 120px;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
     text-decoration: none;
   }
   ul li a {
