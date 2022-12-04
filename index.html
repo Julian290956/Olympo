@@ -6,10 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Navigation Bar with Indicator</title>
-
-
         <link rel="stylesheet" href="style.css">
-                
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
                         
     </head>
@@ -52,19 +49,15 @@
         </nav>
         
     <script type="text/javascript">
-         const linkItems = document.querySelectorAll(".link-item");
-
-linkItems.forEach((linkItem, index) => {
-    linkItem.addEventListener("click", () => {
+        const linkItems = document.querySelectorAll(".link-item");
+        linkItems.forEach((linkItem, index) => {
+        linkItem.addEventListener("click", () => {
         document.querySelector(".active").classList.remove("active");
         linkItem.classList.add("active");
-
         const indicator = document.querySelector(".indicator");
-
         indicator.style.left = `${index * 95 + 48}px`;
     })
 })
-
     </script>
     </body>
 </html>
