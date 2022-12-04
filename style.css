@@ -9,7 +9,7 @@
   }
   .navbar{
     position: relative;
-    height: 100px;
+    height: 120px;
     width: 100%;
     background: #fff;
     border-radius: 20px;
@@ -29,16 +29,11 @@
     position: relative;
     height: 120px;
     width: 100%;
-    display: flex;
-
     text-decoration: none;
-  }
-  ul li a {
-    width: 100%;
   }
   .navbar ul li a i{
     position: absolute;
-    font-size: 38px;
+    font-size: 50px;
     color: #7d2ae8;
   }
   ul li a i.activeIcon{
