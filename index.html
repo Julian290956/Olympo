@@ -4,96 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="IMG/building (1).svg">
-    <title>Olympo</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar</title>
 </head>
 <body>
-    <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="IMG/building (1).svg" alt="Inicio">
-                </span>
-
-                <div class="text logo-text">
-                    <span class="name">Olympo</span>
-                    <span class="profession">Administracion</span>
-                </div>
-            </div>
-
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
-
-        <div class="menu-bar">
-            <div class="menu">
-
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <input type="text" placeholder="Search...">
-                </li>
-
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-home-alt icon' ></i>
-                            <span class="text nav-text">INICIO</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                            <span class="text nav-text">SOBRE NOSOTROS</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="contacto.html">
-                            <i class='bx bx-bell icon'></i>
-                            <span class="text nav-text">CONTACTENOS</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="Inicio_registro_pro/index.php">
-                            <i class='bx bx-pie-chart-alt icon' ></i>
-                            <span class="text nav-text">INICIAR SESION</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-    
-
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-                
-            </div>
+    <button onclick="toggleMenu()" class="burger material-symbols-outlined">Menu</button>
+    <nav class="navbar">
+        <div class="logo">
+            <span>Gmail</span>
         </div>
 
     </nav>
-
-    <section class="home">
-        <div class="text">
-            <h1 class="son">Noticia</h1>
-            <p class="san">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maxime doloremque laudantium minima sequi laborum inventore dolorum esse facilis dolor sit sint dignissimos, nihil ad architecto veniam exercitationem optio? Eaque similique consequatur veritatis quasi sed pariatur, a ab esse. Repellat ipsum optio maxime tenetur aspernatur cum labore vel cupiditate at ad ipsa illum fugit ratione, voluptatum sunt consectetur odit quia ex nulla vitae laborum facilis sequi tempora. Similique nobis ipsam deleniti nemo dolore assumenda dolores itaque laudantium ipsum, voluptatibus explicabo odit mollitia aperiam possimus sed commodi sapiente est labore, adipisci suscipit temporibus molestias! Modi eveniet sapiente provident ad, harum amet.</p>
-        </div>
-    </section>
-
-
-    <script src="JS/script.js"></script>
+    <script type="text/javascript">
+        const toggleMenu = () =>
+        document.body.classList.toggle("open");
+    </script>
 </body>
 </html>
