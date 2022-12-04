@@ -9,7 +9,6 @@
   }
   .navbar{
     position: relative;
-
     height: 100px;
     width: 100%;
     background: #fff;
@@ -34,6 +33,9 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+  }
+  ul li a {
+    width: 100%;
   }
   .navbar ul li a i{
     position: absolute;
