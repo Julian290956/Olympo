@@ -1,63 +1,67 @@
 <!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Navigation Menu with Indicator | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+   </head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li class="active">
+        <a href="#">
+          <i class='bx bx-home icon'></i>
+          <i class='bx bxs-home activeIcon'></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-user icon'></i>
+          <i class='bx bxs-user activeIcon'></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-heart icon'></i>
+          <i class='bx bxs-heart activeIcon'></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-folder icon'></i>
+          <i class='bx bxs-folder activeIcon'></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog icon'></i>
+          <i class='bx bxs-cog activeIcon'></i>
+        </a>
+      </li>
+      <div class="indicator"></div>
+    </ul>
+  </div>
 
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Navigation Bar with Indicator</title>
-        <link rel="stylesheet" href="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-                        
-    </head>
-    <body>
-        <nav class="nav">
-            <ul class="nav-content">
-                <li class="nav-list">
-                    <a href="#" class="link-item active">
-                        <i class='bx bxs-home link-icon'></i>
-                        <span class="link-text">Home</span>
-                    </a>
-                </li>
-                <li class="nav-list">
-                    <a href="#" class="link-item">
-                        <i class='bx bxs-caret-right-square link-icon'></i>
-                        <span class="link-text">Content</span>
-                    </a>
-                </li>
-                <li class="nav-list">
-                    <a href="#" class="link-item">
-                        <i class='bx bxs-bar-chart-square link-icon'></i>
-                        <span class="link-text">Analytics</span>
-                    </a>
-                </li>
-                <li class="nav-list">
-                    <a href="#" class="link-item">
-                        <i class='bx bxs-message-rounded link-icon'></i>
-                        <span class="link-text">Comments</span>
-                    </a>
-                </li>
-                <li class="nav-list">
-                    <a href="#" class="link-item">
-                        <i class='bx bxs-user link-icon'></i>
-                        <span class="link-text">Profile</span>
-                    </a>
-                </li>
+  <script>
 
-                <span class="indicator"></span>
-            </ul>
-        </nav>
-        
-    <script type="text/javascript">
-        const linkItems = document.querySelectorAll(".link-item");
-        linkItems.forEach((linkItem, index) => {
-        linkItem.addEventListener("click", () => {
-        document.querySelector(".active").classList.remove("active");
-        linkItem.classList.add("active");
-        const indicator = document.querySelector(".indicator");
-        indicator.style.left = `${index * 95 + 48}px`;
-    })
-})
-    </script>
-    </body>
+  const navBar = document.querySelector(".navbar")
+        allLi = document.querySelectorAll("li");
+
+  allLi.forEach((li, index) => {
+     li.addEventListener("click" , e =>{
+       e.preventDefault(); //preventing from submitting
+       navBar.querySelector(".active").classList.remove("active");
+       li.classList.add("active");
+
+       const indicator = document.querySelector(".indicator");
+       indicator.style.transform = `translateX(calc(${index * 90}px))`;
+     });
+  });
+
+  </script>
+
+</body>
 </html>
