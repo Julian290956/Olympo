@@ -33,7 +33,7 @@
   }
   .navbar ul li a i{
     position: absolute;
-    font-size: 50px;
+    font-size: 500px;
     color: #7d2ae8;
   }
   ul li a i.activeIcon{
